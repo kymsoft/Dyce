@@ -1,4 +1,7 @@
 
 import images from "./images";
+import { components } from "./components";
 
-export { images };
+export { images, components };
+
+

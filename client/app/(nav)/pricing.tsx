@@ -1,11 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 import { images } from "@/constants";
-import ResetPasswordForm from '@/components/reset-password-form';
 
+import ComingSoon from '@/components/coming-soon';
 
-const ResetPassword = () => {
+const Pricing = () => {
   return (
     <div
       className="flex  flex-col items-center
@@ -24,26 +23,16 @@ const ResetPassword = () => {
           />
           </Link>
         </div>
-        <h1 className="text-2xl font-semibold text-white drop-shadow-md text-center">
-          Reset Password
-        </h1>
 
-      <ResetPasswordForm/>
-      </div>
-      <div className=" gap-5 flex w-full mb-3 p-3 items-center justify-center text-center">
-        <Link href="" className="text-white">
-          Terms and Conditions
-        </Link>
-        <Link href="" className="text-white">
-          Team
-        </Link>
-        <Link href="" className="text-white">
-          Contact and Support
-        </Link>
-        <p className="text-white">@Dyce 2024</p>
+        <h1 className="text-2xl font-semibold text-white drop-shadow-md text-center">
+          Pricing
+        </h1>
+            <ComingSoon/>
+          
+        
       </div>
     </div>
   )
 }
 
-export default ResetPassword
+export default Pricing

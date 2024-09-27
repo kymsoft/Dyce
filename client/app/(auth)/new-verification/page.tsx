@@ -9,7 +9,7 @@ const NewVerification = () => {
     <div
       className="flex  flex-col items-center
     bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] 
-    from-[#9400FF] to-[#0D1117]"
+    from-[#9400FF] to-[#0D1117] h-[100vh]"
     >
       <div className="space-y-4 my-16">
         <div className="flex justify-center items-center ">

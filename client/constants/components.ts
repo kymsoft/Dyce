@@ -24,3 +24,25 @@ export const Colors = {
     tabIconSelected: tintColorDark,
   },
 };
+
+export const components: { title: string; href: string; description: string }[] = [
+  {
+    title: "Learn",
+    href: "/learn",
+    description:
+      "Visit our resource centers and acquire knowledge on how to operate our systems.",
+  },
+  {
+    title: "Connect",
+    href: "/connect",
+    description:
+      "Connect with us via social links, our newsletter, and community forum.",
+  },
+  {
+    title: "Developers",
+    href: "/developers",
+    description:
+      "For integrating our APIs, visit our docs to learn and integrate our systems for businesses.",
+  },
+  
+]

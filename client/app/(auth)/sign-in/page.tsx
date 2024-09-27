@@ -1,15 +1,19 @@
+"use client"
+
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import { images } from "@/constants";
 import LoginForm from '@/components/login-form';
+import ComingSoon from '@/components/coming-soon';
 
 const SignIn = () => {
+  const [isReady, setReady] = useState(false)
   return (
     <div
       className="flex  flex-col items-center
     bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] 
-    from-[#9400FF] to-[#0D1117]"
+    from-[#9400FF] to-[#0D1117] h-[100vh]"
     >
       <div className="space-y-4 my-16">
         <div className="flex justify-center items-center ">
@@ -28,22 +32,21 @@ const SignIn = () => {
           Sign In to your Dyce
         </h1>
 
-        <LoginForm />
-        {/* <LoginButton>
-          <Button variant="secondary" size="lg">
-            Sign In
-          </Button>
-        </LoginButton> */}
+        {
+          isReady ? (
+            <LoginForm />
+          ) : (
+            <ComingSoon/>
+          )
+        }
+        
       </div>
       <div className=" gap-5 flex w-full mb-3 p-3 items-center justify-center text-center">
-        <Link href="" className="text-white">
-          Terms and Conditions
-        </Link>
         <Link href="" className="text-white">
           Team
         </Link>
         <Link href="" className="text-white">
-          Contact and Support
+          Contact
         </Link>
         <p className="text-white">@Dyce 2024</p>
       </div>
