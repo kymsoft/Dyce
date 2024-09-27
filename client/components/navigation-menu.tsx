@@ -30,29 +30,36 @@ const NavigationMenuArea = () => {
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
-                    <Image
-                      src={images.logo}
-                      alt="Logo"
-                      height={36}
-                      width={36}
-                      className=" bg-[#3e006e] p-2 rounded-md"
-                    />
-                    <div className="mb-2 mt-4 text-lg font-medium">Dyce</div>
+                    <div className="mb-2 mt-4 text-lg font-medium flex">
+                      <Image
+                        src={images.logo}
+                        alt="Logo"
+                        height={36}
+                        width={36}
+                        className=" bg-[#3e006e] p-2 rounded-md"
+                      />
+                      Dyce
+                    </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      Dyce is a package solution that aims to step up the payment and checkout ecosystem 
-                      in Africa through the introduction of 3 solid products. The Wallet, A Virtual Terminal and The S-mall
+                      Dyce is a package solution that aims to step up the
+                      payment and checkout ecosystem in Africa through the
+                      introduction of 3 solid products. The Wallet, A Virtual
+                      Terminal and The S-mall
                     </p>
                   </a>
                 </NavigationMenuLink>
               </li>
               <ListItem href="/docs" title="Get Started">
-                Regustr your Dyce Account. Having a resume is 
+                Register your Dyce Account. Sign up, link your cards, and start
+                making seamless, contactless payments in seconds.
               </ListItem>
               <ListItem href="/docs/installation" title="Installation">
-                Fo to App Store or Google store to find our
+                Get your Wallet and Terminals on App Store or Google store to
+                enjoy our services.
               </ListItem>
               <ListItem href="/docs/primitives/Panel" title="Panel">
-                Styles for headings, paragraphs, lists...etc
+                Access your dashboard for management. Hop on on the ecosystem of
+                tomorrow. You're good to go!
               </ListItem>
             </ul>
           </NavigationMenuContent>
